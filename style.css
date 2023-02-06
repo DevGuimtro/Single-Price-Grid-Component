@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-global {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 5px 15px hsl(204, 43%, 70%);
+  border-radius: 10px;
+}
+
+.header-content {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 750px;
+}
+
+.main-title {
+  color: hsl(179, 62%, 43%);
+}
+
+.main-subtitle {
+  color: hsl(71, 73%, 54%);
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.description-text {
+  font-size: 1.2rem;
+  color: hsl(218, 22%, 67%);
+  font-weight: 400;
+}
+
+.cards-row {
+  display: flex;
+  min-height: 270px;
+}
+
+.price-content {
+  flex: 1;
+  padding: 2.5rem;
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
+}
+
+.price-title {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.price-month {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.gray-text {
+  font-size: 1rem;
+  color: hsl(204, 43%, 93%);
+  font-weight: 200;
+  padding-left: 1rem;
+}
+
+.price-info {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.button {
+  padding-top: 1rem;
+  color: #fff;
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 1rem;
+  min-width: 240px;
+  box-shadow: 1px 1px 10px #353535;
+  transition: 0.3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.card-info {
+  color: #fff;
+  flex: 1;
+  padding: 2.5rem;
+  background-color: hsl(179, 62%, 60%);
+  border-bottom-right-radius: 10px;
+}
+
+.why-us {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.info-text {
+  color: hsl(204, 43%, 93%);
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.attribution {
+  padding: 1.5rem;
+  left: 0;
+  height: 40px;
+  color: hsl(179, 62%, 60%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282828;
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+  .header-content {
+    max-width: 300px;
+    padding: 1.5rem;
+  }
+
+  .card-global {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards-row {
+    flex-direction: column;
+    min-width: 300px;
+  }
+
+  .price-content {
+    border-bottom-left-radius: 0px;
+  }
+
+  .card-info {
+    border-bottom-right-radius: 0px;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .main-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  .price-content {
+    padding: 1.5rem;
+  }
+
+  .price-title {
+    padding-bottom: 1rem;
+  }
+
+  .price-info {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .card-info {
+    padding: 1.5rem;
+  }
+
+  .attribution {
+    padding: 1.2rem;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    gap: 20px 20px;
+  }
+}
